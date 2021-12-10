@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente1</title>
+</head>
+<body>
+   <h1>Es componente1</h1>
+   <div style="float: left;">
+    <h1>La figura</h1>
+    <h4>Estamos trabajando con un <span style="color: tomato;">{{ figura.tipo }}</span></h4>
+    <img src="{{ figura.imagen }}">
+    <h4>Su base es: <span style="color: blueviolet;">{{ figura.base }}</span></h4>
+    <h4>Su altura es: <span style="color:chartreuse;">{{ figura.altura }}</span></h4>
+    <h4>Su área es: <span style="color:green;">{{ calcularAreaTriangulo(figura.base,figura.altura) }}</span></h4>
+    <label>Base:</label><input type="number" [(ngModel)]="figura.base">
+    <br>
+    <label>Altura:</label><input type="number" [(ngModel)]="figura.altura">
+    <h2>..................FINALIZACION YU..................</h2>
+</div>
+</body>
+</html>
